@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Home Rentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .listing {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .listing img {
+            max-width: 100%;
+            height: auto;
+        }
+        .listing h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Home Rentals</h1>
+    </header>
+    <div class="container">
+        <div class="listing">
+            <img src="/static/villa1.jpeg" alt="Home Rental 1">
+            <h2>Beautiful Oceanfront Villa</h2>
+            <p>Spacious villa with stunning ocean views, private pool, and direct beach access.</p>
+            <p>Price: $300/night</p>
+            <a href="{% url 'Listing1' %}">View Details</a>
+        </div>
+        <div class="listing">
+            <img src="/static/mountain cabin.jpeg" alt="Home Rental 2">
+            <h2>Cozy Mountain Cabin</h2>
+            <p>Charming cabin nestled in the mountains, perfect for a peaceful getaway.</p>
+            <p>Price: $150/night</p>
+            <a href="{% url 'Listing2' %}">View Details</a>
+        </div>
+        <!-- Add more listings here -->
+    </div>
+</body>
+</html>
